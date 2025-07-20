@@ -1,10 +1,12 @@
-function MainContent() {
+function UserProfile(props) {
   return (
-    <main style={{ padding: '20px', backgroundColor: '#f5f5f5', fontFamily: 'Arial' }}>
-      <h2>Main Content</h2>
-      <p>Welcome to the main section. Explore the cities and enjoy learning about them!</p>
-    </main>
+    <div style={{ border: '1px solid gray', padding: '10px', margin: '10px', borderRadius: '8px' }}>
+      <h2 style={{ color: 'blue', fontSize: '1.5em' }}>{props.name}</h2>
+      <p>Age: <span style={{ fontWeight: 'bold' }}>{props.age}</span></p>
+      <p>Bio: <span style={{ fontStyle: 'italic' }}>{props.bio}</span></p>
+    </div>
   );
 }
 
-export default MainContent;
+export default UserProfile;
+
