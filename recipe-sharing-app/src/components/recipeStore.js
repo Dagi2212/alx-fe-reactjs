@@ -2,6 +2,15 @@ import { create } from 'zustand';
 
 import create from 'zustand';
 
+
+export const useRecipeStore = create((set) => ({
+  recipes: [],
+  addRecipe: (newRecipe) =>
+    set((state) => ({ recipes: [...state.recipes, newRecipe] })),
+  setRecipes: (recipes) => set({ recipes }),
+}));
+
+
 export const useRecipeStore = create((set, get) => ({
   recipes: [
     // Example recipes, replace or load dynamically as needed
