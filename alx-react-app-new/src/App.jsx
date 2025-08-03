@@ -9,7 +9,7 @@ function App() {
     <div>
       <Header />
       <MainContent />
-      <UserProfile name="Dagmawi" age={24} bio="Loves building front-end apps and traveling." />
+      <UserProfile name="Dagmawi" age={21} bio="Loves building front-end apps and traveling." />
       <Counter />
       <Footer />
     </div>
