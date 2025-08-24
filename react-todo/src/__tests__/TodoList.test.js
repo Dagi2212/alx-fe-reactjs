@@ -33,7 +33,7 @@ describe("TodoList Component", () => {
   test("deletes a todo", () => {
     render(<TodoList />);
     const todo = screen.getByText("Build Todo App");
-    const deleteButton = todo.nextSibling;
+    const deleteButton = todo.querySelector("button");
 
     fireEvent.click(deleteButton);
     expect(todo).not.toBeInTheDocument();
